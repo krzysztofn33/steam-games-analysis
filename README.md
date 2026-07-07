@@ -35,7 +35,7 @@ Finding 2: [Query](sql/Q2-category-analysis.sql)
 Genre barely predicts rating with two exceptions. Most genres cluster tightly between 0.76-0.80 average positive ratio, meaning genre is a weak predictor of reception. Two genres break the pattern downward: MMO (0.674) and Violent (0.649). MMOs likely suffer from their live service nature (server issues, monetization, abandonment) and high player expectations, while the Violent tag has a small sample (n=127). Indie, Adventure, and Casual are the most numerous categories. They sit at the top, consistent with Steam's indie dominated catalog and the price findings from Q1.
 
 ### Q3 - Free-to-play vs paid
-![chart](dashboard/screenshots/chart_1_price_vs_rating.png)
+![chart](dashboard/screenshots/chart_3_f2p_mean_vs_median.png)
 </br>
 Finding 3: [Query](sql/Q3-free-to-paid-receipt.sql)
 Free to play games show 2.4× higher average reviews and 2× higher average playtime than paid games. But the medians tell the opposite story: typical F2P and paid games have nearly identical review counts (238 vs 239), and typical F2P playtime is 8× lower (17 min vs 146 min). The averages are inflated by a handful of F2P mega-hits (CS:GO, Dota 2) with millions of reviews and thousands of hours. The median reveals the truth: the typical F2P game is installed and abandoned within 17 minutes, while paid games with their upfront cost filtering for genuine interest retain players far longer. F2P also scores lower on ratings (0.762 vs 0.789). Zero price barrier drives downloads but not commitment.

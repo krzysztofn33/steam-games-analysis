@@ -29,7 +29,7 @@ Finding 1: [Query](sql/Q1-price-rating-correlation.sql)
 Higher price does NOT mean better ratings. Positive review ratio follows an inverted-U curve, peaking at the $5-15 bracket (81.4%) and declining for premium titles. The $60+ segment scored lowest (68.6%), though with a small sample (n=31). This suggests a "sweet spot" for well received games in the mid-low price range, possibly reflecting buyer expectations scaling with price.
 
 ### Q2 - Genre vs rating
-![chart](dashboard/screenshots/chart_3_f2p_mean_vs_median.png)
+![chart](dashboard/screenshots/chart_2_genre_ranking.png)
 </br>
 Finding 2: [Query](sql/Q2-category-analysis.sql)
 Genre barely predicts rating with two exceptions. Most genres cluster tightly between 0.76-0.80 average positive ratio, meaning genre is a weak predictor of reception. Two genres break the pattern downward: MMO (0.674) and Violent (0.649). MMOs likely suffer from their live service nature (server issues, monetization, abandonment) and high player expectations, while the Violent tag has a small sample (n=127). Indie, Adventure, and Casual are the most numerous categories. They sit at the top, consistent with Steam's indie dominated catalog and the price findings from Q1.
